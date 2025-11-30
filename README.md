@@ -1,36 +1,21 @@
 # medusa-lab-santander-cybersec-2025
-Laboratório de força bruta com Medusa realizado em ambiente controlado no Bootcamp Santander Cibersegurança 2025.
+Laboratório sobre força bruta utilizando o Medusa, realizado no Bootcamp Santander Cibersegurança 2025.
 
-# Laboratório de Força Bruta com Medusa  
-Bootcamp Santander Cibersegurança 2025 — Entrega de Exercício
+## Descrição do exercício
+Este repositório reúne a documentação do laboratório prático de força bruta usando o Medusa. O objetivo foi entender, de maneira controlada, como a ferramenta funciona e como serviços podem ser comprometidos quando utilizam credenciais fracas.
 
-## 1. Objetivo  
-Documentar o experimento de força bruta utilizando a ferramenta Medusa em um ambiente totalmente controlado e autorizado.
+## Ambiente utilizado
+O experimento foi feito com o Kali Linux (máquina atacante) e o Metasploitable 2 (máquina vulnerável). Ambos estavam configurados na mesma rede interna criada apenas para fins de estudo.
 
-## 2. Ambiente  
-- Kali Linux bootável (atacante)  
-- Metasploitable 2 (alvo vulnerável)  
-- Rede interna isolada, criada apenas para fins educacionais  
+## Etapas realizadas
+1. Inicialização das máquinas e identificação do endereço IP do Metasploitable.
+2. Verificação dos serviços disponíveis no alvo.
+3. Criação de pequenas listas de usuários e senhas fracas para uso no teste.
+4. Execução do Medusa apontando para um dos serviços do alvo.
+5. Observação das respostas da ferramenta para entender o comportamento da autenticação.
 
-## 3. Metodologia  
-1. Identificação do IP da máquina alvo  
-2. Verificação dos serviços ativos  
-3. Criação de listas de usuários e senhas fracas  
-4. Execução do Medusa para testar combinações de autenticação  
+## Resultados observados
+Durante o teste, foi possível verificar como combinações fracas são facilmente identificadas pela ferramenta. O experimento mostra como ataques automatizados conseguem testar diversas possibilidades rapidamente quando não há mecanismos de proteção como MFA ou bloqueio de tentativas.
 
-## 4. Resultados e Análise  
-- Credenciais fracas puderam ser identificadas no ambiente vulnerável  
-- O teste demonstrou como serviços sem proteção adequada podem ser explorados  
-- Reforça a importância de MFA, bloqueio de tentativas e políticas de senha forte  
-
-## 5. Boas Práticas Observadas  
-- Senhas fortes e únicas  
-- Uso de autenticação multifator  
-- Restrições de acesso e monitoramento constante  
-- Hardening do sistema  
-
-## 6. Evidências  
-As evidências (prints) serão adicionadas conforme orientação do laboratório.
-
-## 7. Conclusão  
-O experimento permitiu compreender, na prática, como ataques de força bruta funcionam e por que credenciais fracas representam risco. A atividade consolidou conceitos de enumeração, rec
+## Conclusão
+O laboratório reforça a importância de políticas de senha adequadas, autenticação reforçada e monitoração constante. Mesmo em um ambiente simples, a diferença entre uma senha fraca e uma política mínima de proteção é evidente. A atividade também ajudou a entender melhor como funciona o processo de força bruta na prática, dentro de um ambiente seguro e autorizado.
