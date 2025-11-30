@@ -1,4 +1,4 @@
-# medusa-lab-santander-cybersec-2025
+[# medusa-lab-santander-cybersec-2025
 Laboratório sobre força bruta utilizando o Medusa, realizado no Bootcamp Santander Cibersegurança 2025.
 
 ## Descrição do exercício
